@@ -1,0 +1,8 @@
+<%= link_to 'Create a new task', tasks_new_path  %>
+<ol>
+<% @tasks.each do |task| %>
+<li>Completed: <%= task.completed %> - <%= task.title %></li>
+<%= link_to 'More detail', task_show_path(task) %>
+<% end %>
+</ol>
+

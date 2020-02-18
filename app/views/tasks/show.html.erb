@@ -1,0 +1,6 @@
+<ol>
+<li>Completed: <%= @task.completed %> - <%= @task.title %></li>
+<%= link_to 'Edit this task', task_edit_path  %>
+<%= link_to 'Delete', task_delete_path, method: :delete  %>
+<%= link_to 'Go back', tasks_path  %>
+</ol>
